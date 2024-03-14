@@ -1,3 +1,5 @@
+//DC2022BCA0004
+//POS
 import java.util.Scanner;
 
 public class RestaurantManagementSystem {
