@@ -8,7 +8,7 @@ public class VarargsExample {
     
     public static void printNumbers(int... numbers[]) {
         System.out.println("Printing numbers:");
-        for each(int num : numbers) {
+        for(int num : numbers) {
             System.out.println(num);
         }
     }
