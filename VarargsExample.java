@@ -6,9 +6,9 @@ public class VarargsExample {
         printNumbers(10, 20, 30);
     }
     
-    public static void printNumbers(int... numbers) {
+    public static void printNumbers(int... numbers[]) {
         System.out.println("Printing numbers:");
-        for (int num : numbers) {
+        for each(int num : numbers) {
             System.out.println(num);
         }
     }
