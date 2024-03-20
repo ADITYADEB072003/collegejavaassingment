@@ -10,14 +10,15 @@ public class largest {
          
              int[] numbers = new int [10];
 		System.out.print("Enter the no");
-    for (int i = 1; i < numbers.length; i++) {
+    for (int i = 0; i < numbers.length; i++) {
  	numbers[i]=n.nextInt();
 }
         
         int largest = findLargestElement(numbers);
-
+int smallest = findSmallestElement(numbers);
         
         System.out.println("The largest element in the array is: " + largest);
+        System.out.println("The smallest element in the array is: " + smallest);
     }
 
     // Method to find the largest element in the array
@@ -33,5 +34,18 @@ public class largest {
         }
 
         return largest;
+    }
+    public static int findSmallestElement(int[] arr) {
+        
+        int small = arr[0];
+
+        
+        for (int i = 1; i < arr.length; i++) {
+            if (small > arr[i]) {
+                small = arr[i];
+            }
+        }
+
+        return small;
     }
 }
