@@ -42,7 +42,7 @@ public class RestaurantManagementSystem {
         System.out.println("Preparing bill...");
         System.out.println("Items Ordered:");
         for (int i = 0; i < orderCount; i++) {
-            System.out.println(menuOrder[i] + " - $" + menuPrices[i]);
+            System.out.println(menuOrder[i] + " - Rs" + menuPrices[i]);
         }
         System.out.println("Total: $" + total);
         System.out.println("Thank you for dining with us!");
