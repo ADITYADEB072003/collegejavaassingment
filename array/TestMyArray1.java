@@ -43,12 +43,12 @@ class MyArray {
 
     public void sumOfColumns() {
         System.out.println("Sum of each column:");
-        for (int j = 0; j < c; j++) {
+        for (int i = 0; i < r; i++) {
             int sum = 0;
-            for (int i = 0; i < r; i++) {
-                sum +=a[i][j];
+            for (int j = 0; j < c; j++) {
+                sum +=a[j][i];
             }
-            System.out.println("Column " + (j + 1) + ": " + sum);
+            System.out.println("Column " + (i + 1) + ": " + sum);
         }
     }
     public void sumOfAllElements() {
