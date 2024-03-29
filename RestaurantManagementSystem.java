@@ -9,7 +9,7 @@ public class RestaurantManagementSystem {
         String[] menuItems = {"Pizza", "Burger", "Pasta", "Salad"};
         double[] menuPrices = {8.99, 5.99, 7.99, 4.99};
         String[] menuOrder = new String[10]; // Array to store the names of items ordered
-        double total = 0;
+        double total = 0 ;
 
         System.out.println("Welcome to the restaurant! Here's the menu:");
         for (int i = 0; i < menuItems.length; i++) {
