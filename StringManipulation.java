@@ -14,7 +14,10 @@ public class StringManipulation {
 
         // Splitting the string into words
         String[] words = inputString.split("\\s+");
-        System.out.println("Words: " + Arrays.toString(words));
+        System.out.println("Words:");
+        for (String word : words) {
+            System.out.println(word);
+}
 
         // Converting the string to uppercase
         String uppercaseString = inputString.toUpperCase();
@@ -38,6 +41,7 @@ public class StringManipulation {
         boolean nextUpperCase = true;
 
         for (char c : str.toCharArray()) {
+            System.out.println(c);
             if (Character.isWhitespace(c)) {
                 sb.append(c);
                 nextUpperCase = true;
