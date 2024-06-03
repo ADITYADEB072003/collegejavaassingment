@@ -1,5 +1,5 @@
 
-class even extends Thread
+class even extends Runnable
 {
 
 public void run(){
@@ -26,7 +26,7 @@ try{
 }
 
 
-class hello extends Thread
+class hello extends Runnable
 {
 
 public void run(){

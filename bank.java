@@ -46,7 +46,7 @@ class bank {
                 o = scanner.nextInt();
                 if (balance - o > 0) {
                     int  result = deposit[i] - o;
-                    withdraw[i] = result;
+                    withdraw[i] += result;
                 } else {
                     System.out.println("Insufficient balance!");
                 }

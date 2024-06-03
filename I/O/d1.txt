@@ -1,0 +1,4 @@
+vowels = "AEIOUaeiou"
+    consonants = "BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz"
+    special_characters = "!@#$%^&*()_+-=[]{}|;:',.<>?`~"
+    whitespace = " \t\n"
