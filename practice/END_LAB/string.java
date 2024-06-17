@@ -16,7 +16,8 @@ public class string {
            .append(" ")
            .append("World")
            .insert(5, ",")
-           .replace(6, 11, "Java");
+           .replace(6, 11, "Java")
+           .capacity();
         System.out.println("Chained methods result: " + sb3);
     }
 }

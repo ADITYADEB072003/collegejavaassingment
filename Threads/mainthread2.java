@@ -1,5 +1,5 @@
 
-class even extends Runnable
+class even implements Runnable
 {
 
 public void run(){
@@ -26,7 +26,7 @@ try{
 }
 
 
-class hello extends Runnable
+class hello implements Runnable
 {
 
 public void run(){

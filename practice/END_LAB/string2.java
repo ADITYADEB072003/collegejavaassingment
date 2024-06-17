@@ -10,7 +10,12 @@ public class string2 {
         System.out.println(str);
         System.out.println(str.toUpperCase());
         System.out.println(str.toLowerCase());
-        String [] words =str.split("\\s+");
+        String [] words =str.split(" ");
+        int a=words.length;
+        for (String word : words){
+            System.out.println("Split String: " +word);
+        }
+       
         System.out.println("Split String: " + Arrays.toString(words));
 
         StringBuilder properCaseString = new StringBuilder();

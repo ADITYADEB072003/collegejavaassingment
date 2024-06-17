@@ -2,7 +2,7 @@
 import java.util.Scanner;
 
 class MyArray {
-    private int[][] a;
+    public int[][] a;
     private int r;
     private int c;
 
@@ -21,15 +21,7 @@ class MyArray {
         }
     }
 
-    public void display_a() {
-        System.out.println("Array elements:");
-        for (int i = 0; i < r; i++) {
-            for (int j = 0; j < c; j++) {
-                System.out.print(a[i][j] + " ");
-            }
-            System.out.println();
-        }
-    }
+   
 
     public void findEle(int x) {
         System.out.println("Indices of value " + x + ":");
@@ -41,7 +33,33 @@ class MyArray {
             }
         }
     }
-
+public void bubble(int [][] matrix){
+    int temp;
+    int i,j,k;
+    int ROW=r;
+    int COL=c;
+    for (i = 0; i < COL; i++) {
+        for (j = 0; j < ROW; j++) {
+          for (k = j+1; k < ROW; k++) {
+            if (matrix[i][j] > matrix[i][k]) {
+              // swap elements
+              temp = matrix[i][j];
+              matrix[i][j] = matrix[i][k];
+              matrix[i][k] = temp;
+            }
+          }
+        }
+      }
+}
+public void display_a() {
+    System.out.println("Array elements:");
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            System.out.print(a[i][j] + " ");
+        }
+        System.out.println();
+    }
+}
     public void replaceEle(int x, int y) {
         System.out.println("Replacing " + x + " with " + y + ":");
         for (int i = 0; i < r; i++) {
@@ -60,7 +78,8 @@ public class TestMyArray {
         MyArray myArray = new MyArray();
         myArray.initialise_a();
         myArray.display_a();
-
+        myArray.bubble(myArray.a);
+        myArray.display_a();
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the value to find: ");
         int findValue = scanner.nextInt();

@@ -7,7 +7,7 @@ public class ColorChangerApplet extends Applet implements ActionListener {
     private Button changeColorButton;
     private Color currentColor;
 
-    @Override
+   
     public void init() {
         // Initialize the button
         changeColorButton = new Button("Change Background Color");
